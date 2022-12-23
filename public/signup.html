@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link href="./css/signup.css" rel="stylesheet">
+    <script src="./js/form.js" defer></script>
+    <script src="./js/token.js" defer></script>
+</head>
+<body>
+    <img src="./images/load.gif" class="loader" alt="">
+
+    <div class="alert-box">
+        <img src="./images/error.jpg" class="alert-img" alt="">
+        <p class="alert-msg">Error Message</p>
+    </div>
+
+    <div class="container">
+        <img src="./images/Logo.jpg" class="logo" alt="">
+    
+        <div>
+    <input type="text" autocomplete="off" id="name" placeholder="Name">
+    <input type="email" autocomplete="off" id="email" placeholder="Email">
+    <input type="password" autocomplete="off" id="password" placeholder="Password">
+    <input type="text" autocomplete="off" id="number" placeholder="Number">
+    <input type="checkbox" checked class="checkbox" id="terms-and-cond">
+
+    <label for="terms-and-cond">Agree to our <a href="">Terms and Conditions</a></label><br>
+
+    <input type="checkbox" class="checkbox" id="notification">
+    <label for="notification">Recieve upcoming offers and events mails</label>
+
+    <button class="submit-btn">Create account</button>
+    </div>
+    <a href="/login" class="link">Already have an account? Log in here</a>
+    </div>
+
+</body>
+</html>

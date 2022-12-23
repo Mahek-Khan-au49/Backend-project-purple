@@ -1,0 +1,88 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <link href="./css/signup.css" rel="stylesheet">
+    <link href="./css/addproduct.css" rel="stylesheet">
+    <script src="./js/token.js" defer></script>
+    <script src="./js/addproduct.js" defer></script>
+
+</head>
+
+<body>
+
+    <img src="./images/load.gif" class="loader" alt="">
+
+    <div class="alert-box">
+        <img src="./images/error.jpg" class="alert-img" alt="">
+        <p class="alert-msg"></p>
+    </div>
+    <img src="./images/Logo.jpg" class="logo" alt="">
+
+    <div class="form">
+        <input type="text" id="product-name" placeholder="product name">
+        <input type="text" id="short-des" placeholder="short line about the product">
+        <textarea id="des" placeholder="detail discription"></textarea>
+
+        <!--product img-->
+        <div class="product-info">
+            <div class="product-image">
+                <p class="text">Product images</p>
+            </div>
+            <div class="upload-image-sec">
+                <!--upload img-->
+                <p class="text"><img src="./images/camera.jpg" alt="">upload image</p>
+                <div class="upload-catlouge">
+                    <input type="file" class="fileupload" id="first-file-upload-btn" hidden>
+                    <label for="first-file-upload-btn" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="second-file-upload-btn" hidden>
+                    <label for="second-file-upload-btn" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="third-file-upload-btn" hidden>
+                    <label for="third-file-upload-btn" class="upload-image"></label>
+
+                    <input type="file" class="fileupload" id="fourth-file-upload-btn" hidden>
+                    <label for="fourth-file-upload-btn" class="upload-image"></label>
+                </div>
+            </div>
+            <div class="select-shades">
+                <p class="text">Shades Available</p>
+                <div class="shades">
+                    <input type="checkbox" class="shade-checkbox" id="red" value="red">
+                    <input type="checkbox" class="shade-checkbox" id="pink" value="pink">
+                    <input type="checkbox" class="shade-checkbox" id="peach" value="peach">
+                    <input type="checkbox" class="shade-checkbox" id="brown" value="brown">
+                    <input type="checkbox" class="shade-checkbox" id="maroon" value="maroon">
+                </div>
+            </div>
+        </div>
+
+        <div class="product-price">
+            <input type="number" id="actual-price" placeholder="actual price">
+            <input type="number" id="discount" placeholder="discount price">
+            <input type="number" id="sell-price" placeholder="selling price">
+
+        </div>
+
+        <input type="number" id="stock" min="20" placeholder="items in stcoks(minimum 20)">
+
+        <textarea id="tags"
+            placeholder="Enter categories here, for example - Makeup, Accessories, Skincare(You should add categories first)">      </textarea>
+
+        <input type="checkbox" class="checkbox" id="tac" checked>
+        <label for="tac">Beauty collection takes 30% from your total sell</label>
+
+        <div class="buttons">
+            <button class="btn" id="add-btn">Add product</button>
+            <button class="btn" id="save-btn">Save draft</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

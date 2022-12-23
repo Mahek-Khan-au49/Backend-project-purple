@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller</title>
+    <link href="./css/seller.css" rel="stylesheet">
+    <link href="./css/signup.css" rel="stylesheet">
+    <link href="./css/home.css" rel="stylesheet">
+    <script src="./js/token.js" defer></script>
+    <script src="./js/seller.js" defer></script>
+</head>
+
+<body class="body">
+    <img src="./images/load.gif" class="loader" alt="">
+
+    <div class="alert-box">
+        <img src="./images/error.jpg" class="alert-img" alt="">
+        <p class="alert-msg">Error Message</p>
+    </div>
+    <img src="./images/Logo.jpg" class="logo" alt="">
+
+    <!--seller element-->
+    <div class="become-seller hide">
+        <p class="heading">Become a seller</p>
+        <p class="des">Filler text is text that shares some characteristics of a real written text, but is random
+            or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to
+            spoof an e-mail spam filter</p>
+        <button class="btn" id="apply-btn">Apply for seller account</button>
+    </div>
+    <!--apply form-->
+    <div class="apply-form">
+        <input type="text" id="business-name" placeholder="Business/ Company/ Shop Name">
+        <textarea id="business-add" placeholder="Address"></textarea>
+        <textarea id="about" placeholder="About"></textarea>
+        <input type="text" id="number" placeholder="Number">
+        <input type="checkbox" checked class="checkbox" id="terms-and-cond">
+
+        <label for="terms-and-cond">Agree to our <a href="">Terms and Conditions</a></label><br>
+
+        <input type="checkbox" checked class="checkbox" id="legitInfo">
+        <label for="legitInfo">All information is legit</label>
+
+        <button class="submit-btn" id="apply-form-btn">Apply</button>
+
+    </div>
+
+    <!--Product list-->
+    <div class="product-listing hide">
+        <div class="add-product">
+            <p class="add-product-title">Add Product</p>
+            <button class="btn" onclick="location.href = '/add-product'">Add Product</button>
+        </div>
+        <img src="./images/no-product.jpg"  class="no-product-image hide" alt="">
+    </div>
+</body>
+
+</html>

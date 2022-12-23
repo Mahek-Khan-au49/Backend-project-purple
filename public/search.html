@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link href="./css/home.css" rel="stylesheet">
+        <link href="./css/search.css" rel="stylesheet">
+    <link href="./css/product.css" rel="stylesheet">
+    <script src="./js/nav.js" defer></script>
+    <script src="./js/home.js" defer></script>
+    <script src="./js/search.js" defer></script>
+    <script src="./js/footer.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav">
+            <img src="./images/logo.jpg" class="brand-logo" alt="">
+            <div class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search brand product">
+                    <button class="search-btn">Search</button>
+
+                </div>
+                <a>
+                    <img src="./images/user.jpg" id="user-img" alt="">
+                    <div class="login-logout-popup hide">
+                        <p class="account-info">Log in as, name</p>
+                        <button class="btn" id="user-btn">Log out</button>
+                        </div>
+                </a> 
+                <a href="#"><img src="./images/cart.png" alt=""></a>
+            </div>
+        </div>
+        <ul class="links-container">
+            <li class="link-item"><a href="#" class="link">Home</a></li>
+            <li class="link-item"><a href="#" class="link">Skincare</a></li>
+            <li class="link-item"><a href="#" class="link">Makeup</a></li>
+            <li class="link-item"><a href="#" class="link">Brand</a></li>
+            <li class="link-item"><a href="#" class="link">Accessories</a></li>
+        </ul>
+
+    </nav>
+
+    <section class="search-results">
+        <h2 class="heading">Search results for <span id="search-key">Products</span></h2>
+
+        <section class="card-container"></section>
+
+       <!-- <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="./images/kajal.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Sugar</h2>
+                    <p class="product-short-des">Free of mineral oil</p>
+                    <span class="price">₹199</span><span class="actual-price">₹399</span>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">40% off</span>
+                    <img src="./images/base.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Armani</h2>
+                    <p class="product-short-des">Silky, smooth texture</p>
+                    <span class="price">₹1200</span><span class="actual-price">₹2000</span>
+                </div>
+            </div>
+            .
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">10% off</span>
+                    <img src="./images/facewash.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Cetaphil</h2>
+                    <p class="product-short-des">Gentle Skin Cleanser</p>
+                    <span class="price">₹450</span><span class="actual-price">₹500</span>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">30% off</span>
+                    <img src="./images/prada.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Prada</h2>
+                    <p class="product-short-des">Fragrances by scent</p>
+                    <span class="price">₹1,050</span><span class="actual-price">₹1,500</span>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="./images/palette.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Huda Beauty</h2>
+                    <p class="product-short-des">High Pigmented</p>
+                    <span class="price">₹909</span><span class="actual-price">₹1,299</span>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="./images/hairdyer.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Dyson</h2>
+                    <p class="product-short-des">Fast drying. No extreme heat.</p>
+                    <span class="price">₹16,000</span><span class="actual-price">₹20,000</span>
+                </div>
+            </div>
+    
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">10% off</span>
+                    <img src="./images/hairoil.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">add to wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Mamaearth</h2>
+                    <p class="product-short-des">Oil for hair growth</p>
+                    <span class="price">₹450</span><span class="actual-price">₹499</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="./images/nykaa.jpg" class="product-thumb" alt="">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Nykaa</h2>
+                    <p class="product-short-des"> Soft Matte Lip Cream</p>
+                    <span class="price">₹350</span><span class="actual-price">₹449</span>
+                </div>
+            </div>
+        
+    </section>-->
+ 
+
+</body>
+</html>
